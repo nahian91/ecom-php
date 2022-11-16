@@ -88,6 +88,16 @@
   z-index: -1;
   opacity: .8;
 }
+.single-cat h4 {
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 85px;
+	font-weight: bold;
+	font-size: 30px;
+}
 .single-cat a {
   position: absolute;
   bottom: 30px;

@@ -52,13 +52,13 @@
                         $image_exp = end($image_ext);
                         $image_name = 'category-'.rand(). '.' . $image_exp;
                         $source_path = $_FILES['image']['tmp_name'];
-                        $destination_path = "img/categorys/".$image_name;
+                        $destination_path = "../assets/img/categorys/".$image_name;
                         $upload = move_uploaded_file($source_path, $destination_path);
 
                         //B. Remove the Current Image if available
                         if($current_image!="")
                         {
-                            $remove_path = "img/categorys/".$current_image;
+                            $remove_path = "../assets/img/categorys/".$current_image;
                             $remove = unlink($remove_path);
                         }  
                     }

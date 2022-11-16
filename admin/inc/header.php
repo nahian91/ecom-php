@@ -1,5 +1,8 @@
 <?php
     session_start();
+    if(!isset($_SESSION['username'])) {
+        header('location:login.php');
+    }
     include '../assets/config.php';
 ?>
 
@@ -23,7 +26,7 @@
                     </div>
                 </div>
                 <div class="col-xxl-6 text-end">
-                    <a href="">John Doe, Logout</a>
+                    <a href="logout.php"><?php echo $_SESSION['username'];?>, Logout</a>
                 </div>
             </div>
         </div>
@@ -34,9 +37,13 @@
                 <h4 class="title">Menu</h4>
                 <div class="list-group">
                     <a href="index.php" class="list-group-item list-group-item-action">Dashboard</a>
-                    <a href="category.php" class="list-group-item list-group-item-action">Category</a>
+                    <a href="categorys.php" class="list-group-item list-group-item-action">Category</a>
                     <a href="users.php" class="list-group-item list-group-item-action">Users</a>
                     <a href="products.php" class="list-group-item list-group-item-action">Products</a>
+                    <a href="admin.php" class="list-group-item list-group-item-action">Admin</a>
+                    <a href="orders.php" class="list-group-item list-group-item-action">Orders</a>  
+                    <a href="message.php" class="list-group-item list-group-item-action">Message</a>                    
+                    <a href="settings.php" class="list-group-item list-group-item-action">Settings</a>
                     <a href="logout.php" class="list-group-item list-group-item-action">Logout</a>
                 </div>
             </div>

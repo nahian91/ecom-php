@@ -40,7 +40,7 @@
                                         <td><?php echo $row['cat_featured'];?></td>
                                         <td><?php echo $row['cat_active'];?></td>
                                         <td>
-                                            <img src="img/categorys/<?php echo $row['cat_image'];?>" alt="" style="width: 120px">
+                                            <img src="../assets/img/categorys/<?php echo $row['cat_image'];?>" alt="" style="width: 120px">
                                         </td>
                                         <td>
                                             <a href="edit-category.php?id=<?php echo $row['cat_id'];?>" class="btn btn-info">Edit</a>

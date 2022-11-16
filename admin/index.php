@@ -23,12 +23,12 @@
                     </div>
                     <div class="col-xxl-3">
                         <div class="singlecount">
-                            <h4>total categorys <span>20</span></h4>
+                            <h4>total products <span>20</span></h4>
                         </div>
                     </div>
                     <div class="col-xxl-3">
                         <div class="singlecount">
-                            <h4>total categorys <span>20</span></h4>
+                            <h4>total orders <span>20</span></h4>
                         </div>
                     </div>
                 </div>
